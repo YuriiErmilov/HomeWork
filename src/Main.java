@@ -9,16 +9,16 @@ public class Main {
         System.out.println(cat);
         System.out.println(paper);
 
-        dog = dog + 2;
-        cat = cat + 2;
-        paper = paper + 2;
+        dog = dog + 4;
+        cat = cat + 4;
+        paper = paper + 4;
         System.out.println(dog);
         System.out.println(cat);
         System.out.println(paper);
 
         dog = dog - 3.5;
-        cat = cat + 1.6;
-        paper = paper + 7639;
+        cat = cat - 1.6;
+        paper = paper - 7639;
         System.out.println(dog);
         System.out.println(cat);
         System.out.println(paper);
@@ -44,7 +44,7 @@ public class Main {
         var togetherWeight = firstBoxerWeight + secondBoxerWeight;
         System.out.println(togetherWeight);
 
-        var differenceWeight = firstBoxerWeight - secondBoxerWeight;
+        var differenceWeight = secondBoxerWeight - firstBoxerWeight;
         System.out.println(differenceWeight);
 
         var remainder =  secondBoxerWeight % firstBoxerWeight;
@@ -53,10 +53,10 @@ public class Main {
         var totalWorkingHours = 640;
         var workingHoursOneEmployee = 8;
         var totalEmployeesCompany = totalWorkingHours / workingHoursOneEmployee;
-        System.out.println("В компании работают всего - " + totalEmployeesCompany + " человек ");
+        System.out.println("Всего работников в компании - " + totalEmployeesCompany + " человек ");
 
         totalEmployeesCompany = totalEmployeesCompany + 94;
-        totalWorkingHours = totalEmployeesCompany * workingHoursOneEmployee;
-        System.out.println("Если в компании работает "+ totalEmployeesCompany +" человек, то всего "+ totalWorkingHours +" часов работы может быть поделено между сотрудниками.");
+        workingHoursOneEmployee = totalWorkingHours / totalEmployeesCompany;
+        System.out.println("Если в компании работает "+totalEmployeesCompany +" человек, то всего "+ workingHoursOneEmployee +" часов работы может быть поделено между ними");
     }
 }
